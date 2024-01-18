@@ -1,0 +1,148 @@
+body{
+    background-color: azure;
+    zoom: 70%;
+}
+
+/*mise en page du titre en haut de la page*/
+#titre h1{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 5em;
+    padding: 150px;
+    background: url(../image/encadrement_titre.svg) no-repeat;
+    background-position: center;
+    background-size: 13em;
+    margin-bottom: 2em;
+    transition: 0.5s;
+}
+
+#titre:hover h1{
+    background-size: 15em;
+    transition: 0.5s;
+}
+
+    /*mise en page du texte de redirection du titre*/
+#titre h1 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+#lien a:hover{
+    color: rgb(67, 187, 237);
+    transition: 0.5s;    
+}
+
+/*organisation de la rubrique*/
+.dispo-case{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20%;
+    margin-bottom: 10%;
+    transition: 0.5s;
+}
+
+.dispo-case:hover{
+    padding-inline: 15%;
+}
+
+    /*dispo contenu texte de la rubrique*/
+.contenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /*nom de la rubrique ex : mes hobbies*/
+.st{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    transition: 0.5s;
+}
+
+/*description*/
+.text{
+    opacity: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: black;
+    text-align: justify;
+    font-size: 0em;
+    margin-inline: 10%;
+    transition: 0.5s;
+}
+
+.dispo-case:hover .text{
+    font-size: 2em;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.dispo-case:hover .st{
+    font-size: 5em;
+    padding-top: 50px;
+    color: rgb(67, 187, 237);
+    background-position: center;
+    background-position-y: 3em;
+    background-size: 10em;
+    padding-left: 3em;
+    padding-right: 3em;
+    transition: 0.5s;
+}
+
+/*images d'ilustration*/
+.illu{
+    transition: 0.5s;
+    opacity: 1;
+    height: 17em;
+    padding: 7em;
+    background: url(../image/encadrement_image.svg) no-repeat;
+    background-size: 30em;
+    background-position: center;
+    transform: rotate(0deg);
+}
+
+/*rubrique des infos persos*/
+#infos:hover .st{
+    margin-left: 1em;
+    transition: 0.5s;
+} 
+
+#infos:hover img{
+    transform: rotate(-10deg);
+}
+
+/*rubrique de mes hobbies*/
+#hobbies:hover h2{
+    margin-right: 1em;
+    transition: 0.5s;
+}
+
+#hobbies:hover img{
+    transform: rotate(10deg);
+}
+
+/*rubrique de mon parcours*/
+#parcours:hover .st{
+    margin-left: 1em;
+    transition: 0.5s;
+}
+
+#parcours:hover img{
+    transform: rotate(-10deg);
+}
+
+/*rubrique bonus*/
+#qual_def:hover .st{
+    margin-right: 1em;
+    transition: 0.5s;
+}
+
+#qual_def:hover img{
+    transform: rotate(10deg);
+}

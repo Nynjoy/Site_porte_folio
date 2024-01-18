@@ -1,0 +1,191 @@
+
+
+/*fond du site*/
+
+body{
+    background-color: azure;
+}
+
+
+/*titre*/
+
+/*mise en page du titre en haut de la page*/
+#titre h1{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 5em;
+    padding: 150px;
+    background: url(../image/encadrement_titre.svg) no-repeat;
+    background-position: center;
+    background-size: 13em;
+    transition: 0.5s;
+}
+
+#titre:hover h1{
+    background-size: 15em;
+    transition: 0.5s;
+}
+
+    /*mise en page du texte de redirection du titre*/
+#titre h1 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+#lien a:hover{
+    color: rgb(67, 187, 237);
+    transition: 0.5s;    
+}
+
+/*rubrique lien vers ma présentation*/
+
+#présentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*gestion du survol des images du lien*/
+#présentation:hover img{
+    opacity: 1;
+    height: 15em;
+    background: url(../image/encadrement_image.svg) no-repeat;
+    background-size: 25em;
+    background-position: center;
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+/*gestion des images du lien*/
+#présentation img{
+    height: 0px;
+    opacity: 0;
+    padding: 5em;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+/*gestion du lien*/
+#présentation a{
+    text-decoration: none;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 3em;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    transition: 0.5s;
+}
+
+/*survol du lien*/
+#présentation a:hover{
+    font-size: 5em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgb(67, 187, 237);
+    transition: 0.5s;
+}
+
+/*rubrique lien vers mes projets*/
+
+#mes_projets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*gestion des images du lien*/
+#mes_projets img{
+    height: 0px;
+    opacity: 0;
+    padding: 5em;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+/*gestion du survol des images du lien*/
+#mes_projets:hover img{
+    opacity: 1;
+    height: 15em;
+    background: url(../image/encadrement_image.svg) no-repeat;
+    background-size: 25em;
+    background-position: center;
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+/*gestion du lien*/
+#mes_projets a{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: black;
+    font-size: 3em;
+    transition: 0.5s;
+}
+
+/*survol du lien*/
+#mes_projets a:hover{
+    font-size: 5em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgb(67, 187, 237);
+    transition: 0.5s;
+}
+
+/*rubrique lien vers le formulaire de contact*/
+
+#Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+/*gestion des images du lien*/
+#Contact img{
+    height: 0px;
+    opacity: 0;
+    padding: 5em;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+/*gestion du survol des images du lien*/
+#Contact:hover img{
+    opacity: 1;
+    height: 15em;
+    background: url(../image/encadrement_image.svg) no-repeat;
+    background-size: 25em;
+    background-position: center;
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+/*gestion du lien*/
+#Contact a{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    transition: 0.5s;
+}
+
+/*survol du lien*/
+#Contact a:hover{
+    font-size: 5em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgb(67, 187, 237);
+    transition: 0.5s;
+}

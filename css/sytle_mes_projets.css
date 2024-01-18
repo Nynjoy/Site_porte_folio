@@ -1,0 +1,167 @@
+body{
+    background-color: azure;
+    zoom: 70%;
+}
+
+#titre h1{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 5em;
+    padding: 150px;
+    background: url(../image/encadrement_titre.svg) no-repeat;
+    background-position: center;
+    background-size: 12em;
+    margin-bottom: 200px;
+    transition: 0.5s;
+}
+
+#titre:hover h1{
+    background-size: 15em;
+    transition: 0.5s;
+}
+
+#titre h1 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+#lien a:hover{
+    color: rgb(67, 187, 237);
+    transition: 0.5s;    
+}
+
+/*agencement des éléments*/
+
+    /*rubrique*/
+.dispo-case{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5%;
+    padding-bottom: 10%;
+    transition: 0.5s;
+}
+
+/*mise en page image principale*/
+.ipg{
+    height: 17em;
+    padding: 10em;
+    margin-left: 5em;
+    background: url(../image/encadrement_image.svg) no-repeat;
+    background-size: 30em;
+    background-position: center;
+    transition: 0.5s;
+}
+    /*hover*/
+.dispo-case:hover .ipg{
+    position: relative;
+    bottom: 7em;
+    transform: rotate(-10deg);
+    margin-right: 5%;
+    margin-left : 5%;
+}
+
+.ipd{
+    height: 15em;
+    padding: 10em;
+    margin-right: 5em;
+    background: url(../image/encadrement_image.svg) no-repeat;
+    background-size: 30em;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.dispo-case:hover .ipd{
+    position: relative;
+    bottom: 7em;
+    transform: rotate(10deg);
+    margin-left: 5%;
+    margin-right : 5%;
+}
+
+/*images secondaires*/
+
+    /*rubrique images agencement au hover*/
+.dispo-case:hover .descript_img{
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+    /*image secondaire*/
+.illu_sd{
+    height: 0px;
+    transition: 0.2s;
+}
+
+    /*apparition et mise en page des images secondaires au hover*/
+.dispo-case:hover .illu_sd{
+    height: 15em;
+    padding: 10em;
+    background: url(../image/encadrement_image.svg) no-repeat;
+    background-size:  27em;
+    background-position: center;
+    margin-top: 5em;
+    transition: 0.5s;
+}
+
+/*dispo contenu texte de la rubrique*/
+.contenu{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+    /*mise en page sous-titre*/
+.st{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 5em;
+    padding: 1em;
+    transition: 0.5s;
+}
+
+    /*hover*/
+.dispo-case:hover .st{
+    font-size: 5em;
+    padding-top: 50px;
+    color: rgb(67, 187, 237);
+    background-position: center;
+    background-position-y: 3em;
+    background-size: 10em;
+    padding-left: 3em;
+    padding-right: 3em;
+    transition: 0.5s;
+}
+
+    /*texte de description du projet*/
+.textd, .textg{
+    opacity: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: black;
+    text-align: justify;
+    font-size: 0em;
+    transition: 0.5s;
+}
+
+    /*hover*/
+
+.dispo-case:hover .textg{
+    padding-left: 10%;
+    padding-block: 2%;
+    border-left: 5px black solid;
+    font-size: 2em;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.dispo-case:hover .textd{
+    padding-right: 10%;
+    padding-block: 2%;
+    border-right: 5px rgb(67, 187, 237) solid;
+    font-size: 2em;
+    opacity: 1;
+    transition: 0.5s;
+}
